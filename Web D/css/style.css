@@ -1,0 +1,978 @@
+body
+{
+	margin:0;
+	padding:0;
+font-family: 'Changa One', cursive;
+background-color: white;
+}
+  .wrapper { 
+            animation: fadeInAnimation ease 8s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            20% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+#barr
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100vh;
+	background: #E5383B;
+	pointer-events: :none;
+	animation: fadeout 2s  forwards;
+	animation-delay: 3s;
+
+}
+@keyframes fadeout
+{
+	0%
+	{
+		opacity: 1;
+
+	}
+	100%
+	{
+		opacity: 0;
+	}
+}
+.loader
+{
+	position:fixed;
+	top:0;
+	left:0;
+	height:100%;
+	background: #000;
+      z-index: 1;
+
+}
+.count
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 18vw;
+	color:#E5383B;
+	font-weight: 800;
+	mix-blend-mode: difference;
+	width: 550px;
+	text-align: right;
+	font-family: 'Changa One';
+      z-index: 2;
+}
+.welcome{
+	position:relative;
+	top:0;
+	left: 0;
+	width:100%;
+	height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	color: #E5383B;
+}
+
+.scrolldown{
+	position: absolute;
+	bottom:20px;
+	left:50%;
+	width: 50px;
+	height: 50px;
+
+	transform: translateY(-80px) translateX(-50%) rotate(45deg);
+
+}
+/*
+.scrolldown spany
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width:100%;
+	height:100%;
+	border-bottom: 2px solid #E5383B;
+	border-right: 2px solid #E5383B;
+	animation: animate 1.5s linear infinite;
+	opacity:0;
+
+}
+.scrolldown spany: nth-child(1)
+{
+	transform: translate(-15px,-15px);
+	animation-delay: -0.4s;
+}
+.scrolldown spany: nth-child(2)
+{
+	transform: translate(0px,0px);
+	animation-delay: -0.2s;
+}
+.scrolldown spany: nth-child(3);
+
+{
+	transform: translate(-15px,-15px);
+	animation-delay: 0s;
+}
+@keyframes animate 
+{
+	0%
+	{
+		top: -5px;
+		left: -5px;
+		opacity:0;
+
+	}
+
+	25%
+	{
+		top: 0px;
+		left: 0px;
+		opacity:1;
+
+	}
+
+	100%
+	{
+		top: 5px;
+		left: 5px;
+		opacity:0;
+
+	}
+} 
+.aboutme{
+ background-image: url("../img/background1.png");
+
+background-color: #123456;
+background-size: cover;
+width: 100vw;
+height: 130vh;
+}
+*/
+
+/*--------------- basic styling --------------- */
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      font-family: "Roboto Mono", Monospace !important;
+      background: #000000 !important;
+      color: #fff !important;
+}
+.whitespace {
+      width: 100%;
+      height: 100px;
+}
+.welcometo{
+	font-family: 'Changa One';
+}
+
+@media(max-width: 768px) {
+      .whitespace {
+            display: none;
+      }
+}
+
+/*--------------- typewriter effect --------------- */
+.line {
+      width: 24em;
+      top: 50%;
+      margin: auto;
+      border-right: 5px solid rgba(229,56,59, 0.95);
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+}
+
+.anim-typewriter {
+      animation: typewriter 4s steps(40) 3.5s 1 normal both,
+      blinkTextCussor 500ms steps(40) infinite normal;
+      animation-delay: 6500ms;
+}
+
+@keyframes typewriter {
+      from {
+            width: 0;
+      }
+      to {
+            width: 12.5em;
+      }
+}
+
+@media(max-width: 768px) {
+      @keyframes typewriter {
+            from {
+                  width: 0;
+            }
+            to {
+                  width: 12em;
+            }
+      }
+}
+
+@keyframes blinkTextCussor {
+      from {
+            border-right-color: rgba(229,56,59, 0.95);
+      }
+      to {
+            border-right-color: transparent;
+      }
+}
+/*--------------- navigation --------------- */
+nav{
+      width: 100%;
+      background: #000000;
+      height: 80px;
+      position: fixed;
+      z-index: 1;
+}
+
+nav #brand {
+      float: left;
+      display: block;
+      margin-left: 82px;
+      line-height: 80px;
+      font-weight: bold;
+}
+
+nav #brand a {
+      color: #fff;
+      transition: all 0.3s ease-out;
+}
+
+nav #brand a:hover {
+      text-decoration: none;
+      color: #E5383B
+}
+
+nav #menu {
+      float: left;
+      right: 80px;
+      position: fixed;
+}
+
+nav #menu li {
+      padding-left: 40px;
+      display: inline-block;
+      cursor: pointer;
+      font-weight: 300;
+      line-height: 80px;
+      position: relative;
+      transition: all 0.3s ease-out;
+}
+nav #menu li span {
+      font-weight: 700;
+}
+
+nav #menu li a {
+      color: #fff;
+}
+
+nav #menu li a:hover {
+      text-decoration: none;
+      color: #E5383B;
+}
+
+#toggle {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+      font-weight: 300;
+      z-index: 2;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      float: right;
+      transition: all 0.3s ease-out;
+      visibility: hidden;
+      opacity: 0;
+}
+
+.close-btn {
+      position: absolute;
+      right: 16px;
+      font-weight: 300;
+      z-index: 2;
+      cursor: pointer;
+      top: -2px;
+      line-height: 80px;
+}
+
+#resize {
+      z-index: 1;
+      top: 0px;
+      position: fixed;
+      background: #0f0f0f;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      opacity: 0;
+      transition: all 1s ease-out;
+}
+
+#resize #menu {
+      height: 90px;
+      position: absolute;
+      left: 45%;
+      transform: translateX(-40%);
+      text-align: center;
+      display: table-cell;
+      vertical-align: center;
+}
+
+#resize #menu li {
+      display: block;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 50px;
+      min-height: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+}
+
+#resize li:nth-child(1) {
+      margin-top: 140px;
+}
+
+#resize #menu li a {
+      color: #fff;
+}
+
+#resize #menu li a:hover {
+      text-decoration: none;
+}
+
+#resize.active {
+      visibility: visible;
+      opacity: 1;
+}
+
+@media(max-width: 768px) {
+      #toggle {
+            visibility: visible;
+            opacity: 1;
+            margin-top: 6px;
+            margin-right: 4px;
+      }
+
+      nav #brand {
+            margin-left: 24px;
+      }
+
+      #menu a {
+            font-size: 20px;
+            font-weight: 300;
+      }
+
+      #resize li span {
+            font-weight: bolder;
+      }
+
+      nav #menu {
+            display: none;
+      }
+}
+
+@media(min-width: 768px) {
+      #resize {
+            visibility: hidden !important;
+      }
+}
+
+/*--------------- hero section --------------- */
+.hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.hero h1 {
+      margin-top: 3vh;
+      font-weight: lighter;
+      text-align: center;
+      letter-spacing: -2px;
+      line-height: 58px;
+}
+
+@media(max-width: 768px) {
+      .header h1 {
+            font-size: 26px;
+      }
+}
+
+.hero h2{
+      text-align: center;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      color: #E5383B;
+}
+.hero img{
+            animation: fadeInAnimation ease 6s; 
+            animation-iteration-count: 1; 
+            animation-fill-mode: forwards; 
+        } 
+        @keyframes fadeInAnimation { 
+            0% { 
+                opacity: 0; 
+            } 
+            50% { 
+                opacity: 0; 
+            } 
+            100% { 
+                opacity: 1; 
+            } 
+        } 
+
+.mytext{
+      height: 100%;
+}
+.mytext h2{
+      padding-top: 20vh;
+      padding-bottom: 3vh;
+      height: 100%;
+      text-align: center;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      color: #E5383B;
+}
+.mytext img{
+      width: 18vw;
+}
+/*--------------- scroll down icon animation --------------- */
+.scroll-down {
+      position: absolute;
+      left: 50%;
+      bottom: 100px;
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      z-index: 0;
+      text-decoration: none;
+      text-shadow: 0;
+      width: 13px;
+      height: 13px;
+      border-bottom: 2px solid rgb(229,56,59);
+      border-right: 2px solid rgb(229,56,59);
+      -webkit-transform: translate(-50%, 0) rotate(45deg);
+      animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+@keyframes fade_move_down {
+      0% {
+            transform: translate(0, -20px) rotate(45deg);
+            opacity: 0;
+      }
+      50% {
+            opacity: 1;
+      }
+      100% {
+            transform: translate(0, 20px) rotate(45deg);
+            opacity: 0;
+      }
+}
+
+/*--------------- projects section --------------- */
+h6 {
+      text-align: center;
+}
+
+.vertical {
+      margin-top: 40px;
+      border-left: 1px solid #fff;
+      height: 80px;
+      position: absolute;
+      left: 50%;
+}
+
+.project {
+      height: 600px;
+}
+
+.project1 {
+      background: url(../img/travisalbum.png) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.project1::after {
+      content: "Travis Scott / A Man";
+      font-family: "Roboto Mono";
+      font-size: 50px;
+      position: relative;
+      color: #ffffff;
+      display: block;
+      top: 10%;
+      left: -40%;
+      right: 60%;
+      bottom: 0;
+}
+
+#desc1{
+            display: flex;
+            width: 45%;
+            color: #ffffff;
+            font-weight: 20;
+            top: -20vh;
+            height: 0vh;
+            margin-left: 10vw;
+            /*padding-right: 48vw;
+            padding-left: 10vw;*/
+            text-align: right;
+            font-style: oblique;
+            transform: translate(0%,-300px);
+}
+
+#desc2{
+          display: flex;
+            width: 40%;
+            color: #ffffff;
+            font-weight: 20;
+            top: -20vh;
+            height: 0vh;
+            margin-left: 54vw;
+            /*padding-right: 48vw;
+            padding-left: 10vw;*/
+            text-align: left;
+            font-style: oblique;
+            transform: translate(0%,-350px);  
+}
+
+#desc3{
+            display: flex;
+            width: 45%;
+            color: #ffffff;
+            font-weight: 20;
+            top: -20vh;
+            height: 0vh;
+            margin-left: 10vw;
+            /*padding-right: 48vw;
+            padding-left: 10vw;*/
+            text-align: right;
+            font-style: oblique;
+            transform: translate(0%,-450px);
+}
+
+#desc4{
+          display: flex;
+            width: 20%;
+            color: #ffffff;
+            font-weight: 20;
+            top: -20vh;
+            height: 0vh;
+            margin-left: 76vw;
+            /*padding-right: 48vw;
+            padding-left: 10vw;*/
+            text-align: left;
+            font-style: oblique;
+            transform: translate(0%,-450px);  
+}
+
+#desc5{
+            display: flex;
+            width: 28%;
+            color: #ffffff;
+            font-weight: 20;
+            top: -20vh;
+            height: 0vh;
+            margin-left: 10vw;
+            /*padding-right: 48vw;
+            padding-left: 10vw;*/
+            text-align: right;
+            font-style: oblique;
+            transform: translate(0%,-200px);
+}
+
+.project2 {
+      background: url(../img/afterhours.png) no-repeat 50% 50%;
+      background-size: cover
+}
+
+.project2::after {
+      content: "Weeknd / After Hours";
+      font-family: "Roboto Mono";
+      font-size: 50px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 80%;
+      left: 90%;
+      right: -50%;
+      bottom: 0;
+}
+
+.project3 {
+      background: url(../img/redhot.png) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.project3::after {
+      content: "Young Thug / Lifestyle";
+      font-family: "Roboto Mono";
+      font-size: 50px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 60%;
+      left: -100%;
+      right: 0;
+      bottom: 0;
+}
+
+.project4 {
+      background: url(../img/redrapper.png) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.project4::after {
+      content: "Playboi Carti / Whole Lotta Red";
+      font-family: "Roboto Mono";
+      font-size: 50px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 80%;
+      left: 20%;
+      right: 0;
+      bottom: 0;
+}
+
+.project5 {
+      background: url(../img/21savage.png) no-repeat 50% 50%;
+      background-size: cover;
+}
+
+.project5::after {
+      content: "21 Savage / SAVAGE MODE";
+      font-family: "Roboto Mono";
+      font-size: 50px;
+      position: relative;
+      color: #fff;
+      display: block;
+      top: 30%;
+      left: -70%;
+      right: 50%;
+      bottom: 0;
+}
+@media(max-width: 768px) {
+      .project {
+            width: 90% !important;
+            margin: 14px auto;
+      }
+
+      .vertical {
+            display: none;
+      }
+
+      .project1::after, .project2::after, .project3::after, .project4::after, .project5::after {
+            display: none;
+      }
+}
+
+/*--------------- footer section --------------- */
+
+.collab {
+      text-align: right;
+}
+
+.collab p {
+      font-weight: lighter !important;
+      margin-bottom: 20px;
+}
+
+.hr {
+      background: rgba(255, 255, 255, 0.2);
+      height: 1px;
+}
+
+.info h4 {
+      font-size: 18px;
+      font-weight: lighter;
+}
+
+.info p {
+      color: grey;
+      font-weight: lighter;
+}
+
+.info li {
+      font-weight: lighter;
+      color: #fff;
+      font-size: 18px;
+      padding-left: 20px;
+}
+
+#fb::before {
+      display: inline-block;
+      content: '';
+      border-radius: 100%;
+      height: 4px;
+      width: 4px;
+      margin-right: 6px;
+      background: #3b5998;
+}
+
+
+#ig::before {
+      display: inline-block;
+      content: '';
+      border-radius: 100%;
+      height: 4px;
+      width: 4px;
+      margin-right: 6px;
+      background: #fcaf45;
+}
+
+
+#bh::before {
+      display: inline-block;
+      content: '';
+      border-radius: 100%;
+      height: 4px;
+      width: 4px;
+      margin-right: 6px;
+      background: #55acee;
+}
+
+
+#ld::before {
+      display: inline-block;
+      content: '';
+      border-radius: 100%;
+      height: 4px;
+      width: 4px;
+      margin-right: 6px;
+      background: #c4302b;
+}
+#gh::before {
+      display: inline-block;
+      content: '';
+      border-radius: 100%;
+      height: 4px;
+      width: 4px;
+      margin-right: 6px;
+      background: #fff;
+}
+
+#media {
+      text-align: center;
+      width:100%;
+}
+
+#media ul {
+      list-style: none;
+}
+
+#media ul li {
+      display: inline-block;
+}
+
+@media(max-width: 768px) {
+      .collab, #personal, #media, #address {
+            text-align: center;
+      }
+
+      .info ul {
+            margin: 0 0 0 -22px;
+            padding: 0;
+      }
+}
+
+/*--------------- work page --------------- */
+
+.hero-content {
+      margin-left: 0%;
+}
+
+.hero-content p {
+      font-weight: 300;
+      line-height: 36px;
+      color: grey;
+}
+
+.hero-content h6 {
+      text-align: left;
+}
+
+@media(max-width: 768px) {
+      .hero-content {
+            padding-top: 50px;
+            width: 96%;
+            margin: 0 auto;
+      }
+}
+
+/*---------------about page --------------- */
+
+.about {
+      height: 500px;
+      margin-top: 120px;
+}
+
+.image {
+      background: url(../img/background1.png) no-repeat 50% 70%;
+}
+.image2 {
+      background: url(../img/redgifwalk.gif) no-repeat 50% 70%;
+}
+.image3 {
+      background: url(../img/colorloop2.gif) no-repeat 80% 70%;
+}
+.imagery {
+      background: url(../img/deathnote.gif) repeat 80% 80%;
+}
+
+.row {
+
+      margin-bottom: 100px;
+}
+
+.rowet {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+.columned {
+  flex: 25%;
+  max-width: 33.3%;
+  padding: 0 4px;
+}
+
+.columned img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  filter: grayscale(1) brightness(0.5);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+.columned img:hover {
+  filter: grayscale(0);
+}
+@media screen and (max-width: 800px) {
+  .columned {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columned {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .columned img {
+    filter: grayscale(0) brightness(1);
+  }
+}
+
+
+
+/*--------------- contact form --------------- */
+
+#contact-form {
+      margin: 5% 1.4%;
+}
+
+#contact-form ul {
+      list-style: none;
+      border-radius: 5px;
+      margin-bottom: 40px;
+}
+
+#contact-form li {
+      padding: 10px;
+}
+
+#contact-form li:last-of-type {
+      border-bottom: none;
+}
+
+#contact-form label {
+      display: block;
+      font-size: .8em;
+      color: #999;
+      padding-left: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+      width: 100%;
+      padding: 5px;
+      border: none;
+      resize: vertical;
+      background: transparent;
+      color: #fff;
+      font-weight: bolder;
+}
+
+input:focus {
+      outline: none;
+      border: none;
+}
+
+textarea:focus {
+      outline: none;
+      border: none;
+}
+
+.textarea {
+      border-bottom: 1px solid #dfdfdf;
+}
+
+.send {
+      margin-left: 50px;
+      text-transform: uppercase;
+      padding: 20px 30px;
+      background: transparent;
+      color: #dfdfdf;
+      font-size: 14px;
+      letter-spacing: 2px;
+}
+
+.send:hover {
+      background: #dfdfdf;
+      color: #101010;
+}
+
+@media(max-width: 768px) {
+      #contact-form {
+            margin: 5% -8%;
+            width: 98%;
+      }
+}
+
+/*--------------- project page --------------- */
+
+.prev, .next p {
+      color: grey;
+}
+
+.prev p {
+      text-align: left;
+}
+
+.next p {
+      text-align: right;
+}
+.matter{
+      display: block;
+}
+/*------------------------------------------------------------/

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="museum" content="My Psyche">
+	<title>My Psyche</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- bootstrap cdns -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+      <!-- google fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+      <!-- terminal effect -->
+      <script src="t.min.js"></script>
+
+      <!-- for on scroll animations -->
+      <link rel="stylesheet" href="animate.css">
+      <script src="wow.min.js"></script>
+      
+<link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+      <section id="barr">
+            <div class="loader"></div>
+            <div class="count"></div>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script type="text/javascript">
+            $(document).ready(function(){
+                  var count = 0;
+                  var counter = setInterval(function(){
+                        if(count<101){
+                              $('.count').text(count + '%');
+                              $('.loader').css('width' , count + '%');
+                              count++
+                        }
+                        else {
+                              clearInterval(counter)
+                        }
+                  },10)
+                  })
+            </script>
+</head>	
+      <body>
+
+	
+		<div class="wrapper">
+			<!-------------------navbar starts here------------->
+			<nav>
+				<span id="brand">
+					<a href="index.html"> My Psych</a>
+				</span>
+
+				<ul id="menu">
+                        <li><a href="work.html">Relics<span>.</span></a></li>
+                        <li><a href="about.html">Studio<span>.</span></a></li>
+		       <li><a href="./Music Player/index.html">Vibing<span>.</span></a></li>
+                        <li><a href="contact.html">About Me<span>.</span></a></li>
+                  </ul>
+                  
+                  <div id="toggle">
+                        <div class="span">menu</div>
+                  </div>
+			</nav>
+			  <div id="resize">
+                        <div class="close-btn">close</div>
+
+                  <ul id="menu">
+                        <li><a href="work.html">Relics<span>.</span></a></li>
+                        <li><a href="about.html">Studio<span>.</span></a></li>
+                        <li><a href="./Music Player/index.html">Vibing<span>.</span></a></li>
+                        <li><a href="contact.html">About Me<span>.</span></a></li>
+                  </ul>
+            </div>
+            <!--------------- navbar ends here --------------->
+
+            <!--------------- hero section starts here --------------->
+            <div class="hero">
+                  <div class="header">
+                  	<img class="rounded mx-auto d-block" alt="" src= "img/redskull.gif" alt="loading">
+                        <h1 class="line anim-typewriter"> Welcome to My Psyche^*</h1><div class= "scrolldown">
+			
+		    </div>
+                   
+                  </div>
+            </div>
+
+            <div class="scroll-down"></div>
+            <!--------------- hero section ends here --------------->
+            <div class="mytext">
+ <h2>My Psych is an art collective aiming to utilise art as a medium to evoke emotion. In this current quarantine, I've been trying to make sense of it by expressing my feelings into a digitial artform that everyone can enjoy.</h2>
+            <img class="rounded mx-auto d-block " src= "img/colorloop1.gif" alt="sassy">
+            </div>
+             <!--------------- projects section starts here --------------->
+            <div class="container-fluid">
+                  <br><br><br>
+
+                  <h6>Digital Directory</h6>
+
+                  <div class="vertical"></div>
+                  <br>
+
+                  <div class="whitespace"></div>
+                  <div class="whitespace"></div>
+
+                  <div class="row">
+                        <div class="col-lg-7"></div>
+
+                        <div class="col-lg-4 project project1 wow fadeInUp" onclick="location.href='project.html'"></div><p id="desc1">I always scavenge for the perfect music to seek inspiration while creating. And thus the playlist, for all those who always hunt for the perfect music to light up and start working. Because after all music is not only about anything that sounds good to the ears but a feeling.  I have been asked a lot many times</p>
+                  </div>
+
+                  <div class="whitespace"></div>
+
+                  <div class="row">
+                        <div class="col-lg-6 project project2 wow fadeInUp" onclick="location.href='project.html'"></div><p id="desc2">I always scavenge for the perfect music to seek inspiration while creating. And thus the playlist, for all those who always hunt for the perfect music to light up and start working. Because after all music is not only about anything that sounds good to the ears but a feeling.  I have been asked a lot many times</p>
+
+                        <div class="col-lg-6"></div>
+                  </div>
+
+                  <div class="whitespace"></div>
+
+                  <div class="row">
+                        <div class="col-lg-7"></div>
+
+                        <div class="col-lg-4 project project3 wow fadeInUp" onclick="location.href='project.html'"></div><p id="desc3">I always scavenge for the perfect music to seek inspiration while creating. And thus the playlist, for all those who always hunt for the perfect music to light up and start working. Because after all music is not only about anything that sounds good to the ears but a feeling.  I have been asked a lot many times</p>
+
+                        <div class="col-lg-1"></div>
+                  </div>
+
+                  <div class="whitespace"></div>
+
+                  <div class="row">
+                        <div class="col-lg-1"></div>
+
+                        <div class="col-lg-0 project project4 wow fadeInUp" onclick="location.href='project.html'"></div><p id="desc4">I always scavenge for the perfect music to seek inspiration while creating. And thus the playlist, for all those who always hunt for the perfect music to light up and start working. Because after all music is not only about anything that sounds good to the ears but a feeling.  I have been asked a lot many times</p>
+
+                        <div class="col-lg-3"></div>
+                  </div>
+
+                  <div class="whitespace"></div>
+
+                  <div class="row">
+                        <div class="col-lg-5"></div>
+
+                        <div class="col-lg-5 project project5 wow fadeInUp" onclick="location.href='project.html'"></div><p id="desc5">I always scavenge for the perfect music to seek inspiration while creating. And thus the playlist, for all those who always hunt for the perfect music to light up and start working. Because after all music is not only about anything that sounds good to the ears but a feeling.  I have been asked a lot many times</p>
+
+                        <div class="col-lg-7"></div>
+                  </div>
+
+                  <div class="whitespace"></div>
+            </div>
+            <!--------------- projects section ends here --------------->
+
+           <!--------------- footer starts here --------------->
+            <div class="footer">
+                  <div class="container">
+                        <br><br>
+<!--
+                        <div class="collab">
+                              <div class="row">
+                                    <div class="col-lg-12">
+                                          <p class="wow fadeInUp">Got an interesting idea? Lets collaborate.</p>
+                                    </div>
+                              </div>
+                        </div>
+-->
+                        <br>
+
+                        <div class="hr">
+                              <div class="row"></div>
+                        </div>
+
+                        <br><br>
+
+                        <div class="info">
+                              <div class="row">
+                                   <!-- <div class="col-lg-4" id="personal">
+                                          <p class="wow fadeInUp">connect with me</p>
+                                          <h4 class="wow fadeInUp" data-wow-delay="1s">ig @sisprasin</h4>
+                                          <br><br>
+                                    </div>-->
+
+                                    <div id="media">
+                                         <!-- <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>-->
+
+                                          <ul>
+                                               <!-- <li id="fb" href="" class="wow fadeInUp" data-wow-delay="0.4s">fb</li>-->
+                                                <li id="ig" href="" class="wow fadeInUp" data-wow-delay="0.6s">ig</li>
+                                                <li id="bh" href="" class="wow fadeInUp" data-wow-delay="0.8s">bh</li>
+                                                <li id="ld" href="" class="wow fadeInUp" data-wow-delay="1s">ld</li>
+                                                <li id="gh" href="" class="wow fadeInUp" data-wow-delay="1.2s">gh</li>
+                                          </ul>
+
+                                          <br><br>
+                                    </div>
+<!--
+                                    <div class="col-lg-4" id="address">
+                                          <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">sisaprasin@gmail.com</h4>
+                                          <br><br>
+                                    </div>
+                                    -->
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <!--------------- footer ends here --------------->
+
+     <!-- greensock cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script type="text/javascript">
+
+      // navigation starts here
+
+      $("#toggle").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+            $(this).toggleClass('on');
+            $("#resize").toggleClass("active");
+      });
+
+      // navigation ends here
+
+      // nav animation
+
+      TweenMax.from("#brand", 1, {
+            delay: 5,
+            y: 10,
+            opacity: 0,
+            ease: Expo.easeInOut
+      })
+
+      TweenMax.staggerFrom("#menu li a", 1, {
+            delay: 5,
+            opacity: 0,
+            ease: Expo.easeInOut
+      }, 0.1);
+
+      // nav animation ends
+
+      new WOW().init();
+      // navigation scroll line
+      </script>
+</body>
+</html>
+
